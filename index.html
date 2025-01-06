@@ -38,6 +38,15 @@
             "shubham",
             "darling"
         ];
+
+        const studentsContainer = document.getElementById('students-container');
+
+        students.forEach((stud) => {
+            studentsContainer.innerHTML += `
+                <div class='student-card'>
+                    <i class="fa-solid fa-user"></i> ${stud}
+                </div>`;
+        });
 </script>
 </body>
 </html>
